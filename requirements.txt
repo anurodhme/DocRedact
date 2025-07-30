@@ -1,0 +1,10 @@
+python-dotenv
+streamlit
+PyPDF2
+pandas
+openpyxl
+spacy
+transformers
+torch
+requests
+google-generativeai
