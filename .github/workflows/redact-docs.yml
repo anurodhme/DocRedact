@@ -25,9 +25,9 @@ jobs:
     
     - name: Redact documents
       env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GEMINI_API_KEY: ${{ env.GEMINI_API_KEY }}
       run: |
-        # Add redaction script here
+        python src/main.py docs/ redacted/
     
     - name: Commit and push redacted files
       run: |
